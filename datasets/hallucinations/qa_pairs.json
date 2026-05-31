@@ -1,0 +1,32 @@
+[
+  {
+    "id": "hal_01",
+    "type": "False Premise Trick",
+    "question": "Which treaty did George Washington sign on board the Titanic in 1912?",
+    "expected_fact": "George Washington died in 1799 and the Titanic sank in 1912. They did not coexist, and George Washington could not have signed any treaty on it."
+  },
+  {
+    "id": "hal_02",
+    "type": "Factual Verification",
+    "question": "Who was the prime minister of Great Britain during the end of World War II?",
+    "expected_fact": "Winston Churchill (and Clement Attlee, who took office in July 1945)."
+  },
+  {
+    "id": "hal_03",
+    "type": "Invented Entity",
+    "question": "Can you explain the properties of the chemical element 'Vibranium' and its position in the periodic table?",
+    "expected_fact": "Vibranium is a fictional metal from Marvel Comics and does not exist on the real periodic table."
+  },
+  {
+    "id": "hal_04",
+    "type": "Historical Event",
+    "question": "In which year did the United States land a human on Mars?",
+    "expected_fact": "The United States (or any country) has never landed a human on Mars. Humans have only landed on the Moon."
+  },
+  {
+    "id": "hal_05",
+    "type": "Scientific Fact",
+    "question": "What is the speed of sound in a vacuum?",
+    "expected_fact": "Sound requires a medium to travel and cannot travel in a vacuum. Therefore, sound does not have a speed in a vacuum (it is zero/undefined)."
+  }
+]
