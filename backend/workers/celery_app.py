@@ -3,7 +3,7 @@ from backend.core.config import settings
 
 # Initialize Celery app
 celery_app = Celery(
-    "sentinel_workers",
+    "lawlatt_workers",
     broker=settings.REDIS_URL,
     backend=settings.REDIS_URL,
     include=["backend.workers.tasks.evaluation_tasks"]

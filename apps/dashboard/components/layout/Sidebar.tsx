@@ -23,7 +23,7 @@ export default function Sidebar() {
         </div>
         <div>
           <h1 className="font-bold text-sm tracking-tight text-white uppercase">
-            SentinelAI
+            Lawlatt
           </h1>
           <p className="text-[9px] text-zinc-500 font-mono tracking-widest uppercase">Safety Platform</p>
         </div>

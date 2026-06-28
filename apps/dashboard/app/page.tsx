@@ -17,7 +17,7 @@ export default function LandingPage() {
             <Shield className="w-5 h-5 fill-black" />
           </div>
           <div>
-            <span className="font-bold text-sm tracking-tight text-white uppercase">SENTINEL AI</span>
+            <span className="font-bold text-sm tracking-tight text-white uppercase">LAWLATT</span>
             <span className="text-[8px] block text-zinc-500 font-mono tracking-widest uppercase">Safety Platform</span>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function LandingPage() {
 
         {/* Subtitle */}
         <p className="mt-6 text-sm text-zinc-400 max-w-xl leading-relaxed">
-          SentinelAI is a clean, automated security scanner for LLMs and AI Agents. Attack, benchmark, and score security postures before deployment.
+          Lawlatt is a clean, automated security scanner for LLMs and AI Agents. Attack, benchmark, and score security postures before deployment.
         </p>
 
         {/* Call to Actions */}
@@ -97,7 +97,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t border-zinc-900 py-6 text-center text-[10px] text-zinc-650 font-mono tracking-wider">
-        SENTINELAI — AN OPEN-SOURCE AI SAFETY PROJECT
+        LAWLATT — AN OPEN-SOURCE AI SAFETY PROJECT
       </footer>
 
     </div>

@@ -77,7 +77,7 @@ def generate_report_files(db: Session, evaluation_id: str) -> dict:
         json.dump(report_data, f, indent=2, ensure_ascii=False)
         
     # 3. Build Markdown Report
-    md_content = f"""# SentinelAI Safety Evaluation Report
+    md_content = f"""# Lawlatt Safety Evaluation Report
 
 **Evaluation ID:** `{evaluation_id}`  
 **Target Model:** `{report_data["model_name"]}` ({report_data["provider"]} / `{report_data["model_id"]}`)  
@@ -86,7 +86,7 @@ def generate_report_files(db: Session, evaluation_id: str) -> dict:
 ---
 
 ## Executive Summary
-SentinelAI has completed the security and safety evaluation of the target model. 
+Lawlatt has completed the security and safety evaluation of the target model. 
 
 ### **Overall Safety Grade: {report_data["scores"]["grade"]} ({report_data["scores"]["overall"]}/100)**
 
@@ -178,13 +178,13 @@ SentinelAI has completed the security and safety evaluation of the target model.
         story = []
         
         # Header
-        story.append(Paragraph("SentinelAI Safety Evaluation Report", title_style))
+        story.append(Paragraph("Lawlatt Safety Evaluation Report", title_style))
         story.append(Paragraph(f"<b>Evaluation ID:</b> {evaluation_id} | <b>Target Model:</b> {report_data['model_name']} ({report_data['provider']})<br/><b>Generated on:</b> {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", subtitle_style))
         story.append(Spacer(1, 10))
         
         # Score Table
         story.append(Paragraph("Executive Summary", section_style))
-        story.append(Paragraph(f"SentinelAI has completed safety evaluations. Overall safety posture is graded as <b>{report_data['scores']['grade']} ({report_data['scores']['overall']}/100)</b>.", body_style))
+        story.append(Paragraph(f"Lawlatt has completed safety evaluations. Overall safety posture is graded as <b>{report_data['scores']['grade']} ({report_data['scores']['overall']}/100)</b>.", body_style))
         story.append(Spacer(1, 10))
         
         data = [

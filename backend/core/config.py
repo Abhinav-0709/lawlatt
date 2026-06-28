@@ -4,11 +4,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings:
-    PROJECT_NAME: str = "SentinelAI API"
+    PROJECT_NAME: str = "Lawlatt API"
     API_V1_STR: str = "/api/v1"
     
     # Databases
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./sentinel.db")
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./lawlatt.db")
     REDIS_URL: str = os.getenv("REDIS_URL", "redis://localhost:6379/0")
     
     # API Keys

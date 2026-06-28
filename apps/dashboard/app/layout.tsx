@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SentinelAI — AI Safety & Security Evaluation Platform",
+  title: "Lawlatt — AI Safety & Security Evaluation Platform",
   description: "Automated penetration testing, safety benchmarking, and vulnerability scanner for LLMs and autonomous AI Agents.",
 };
 

@@ -33,15 +33,15 @@ def download_report(report_id: str, file_format: str, db: Session = Depends(get_
     if file_format == "pdf":
         file_path = report.pdf_path
         media_type = "application/pdf"
-        filename = f"sentinel_report_{report.evaluation_id}.pdf"
+        filename = f"lawlatt_report_{report.evaluation_id}.pdf"
     elif file_format == "markdown" or file_format == "md":
         file_path = report.markdown_path
         media_type = "text/markdown"
-        filename = f"sentinel_report_{report.evaluation_id}.md"
+        filename = f"lawlatt_report_{report.evaluation_id}.md"
     elif file_format == "json":
         file_path = report.json_path
         media_type = "application/json"
-        filename = f"sentinel_report_{report.evaluation_id}.json"
+        filename = f"lawlatt_report_{report.evaluation_id}.json"
     else:
         raise HTTPException(status_code=400, detail="Invalid format. Supported formats: pdf, markdown, json")
         

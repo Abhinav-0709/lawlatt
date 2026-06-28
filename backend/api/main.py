@@ -10,7 +10,7 @@ Base.metadata.create_all(bind=engine)
 # 2. Setup FastAPI Application
 app = FastAPI(
     title=settings.PROJECT_NAME,
-    description="API Engine for SentinelAI Security and Safety Evaluator",
+    description="API Engine for Lawlatt Security and Safety Evaluator",
     version="1.0.0"
 )
 

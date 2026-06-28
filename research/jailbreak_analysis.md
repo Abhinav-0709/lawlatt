@@ -1,6 +1,6 @@
 # Research Notes: Jailbreak Attack Analysis & Heuristics Mitigation
 
-This research document analyzes specific LLM jailbreak vectors observed during red-teaming evaluations on SentinelAI, specifically focusing on the **Grandma Exploit** and **Character Roleplay** techniques.
+This research document analyzes specific LLM jailbreak vectors observed during red-teaming evaluations on Lawlatt, specifically focusing on the **Grandma Exploit** and **Character Roleplay** techniques.
 
 ---
 
