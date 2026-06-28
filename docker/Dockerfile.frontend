@@ -1,0 +1,16 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY apps/dashboard/package*.json ./
+RUN npm install
+
+COPY apps/dashboard/ ./
+
+# Build Next.js app
+# In dev mode we can just use npm run dev. Let's build it for production.
+RUN npm run build
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]
