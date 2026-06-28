@@ -1,8 +1,8 @@
-# SentinelAI
+# Lawlatt
 
 > **AI Safety & Trustworthiness Evaluation Platform for LLMs & AI Agents**
 
-SentinelAI is an automated AI security and safety auditing platform that enables developers, researchers, startups, and enterprises to penetration-test the safety and trustworthiness of Large Language Models (LLMs) and autonomous AI Agents before deployment.
+Lawlatt is an automated AI security and safety auditing platform that enables developers, researchers, startups, and enterprises to penetration-test the safety and trustworthiness of Large Language Models (LLMs) and autonomous AI Agents before deployment.
 
 Think of it as **GitHub Actions + Lighthouse + OWASP ZAP** for AI systems.
 
@@ -27,7 +27,7 @@ Think of it as **GitHub Actions + Lighthouse + OWASP ZAP** for AI systems.
 ## Directory Structure
 
 ```text
-sentinel-ai/
+lawlatt/
 ├── apps/
 │   └── dashboard/          # Next.js 16 (App Router, Tailwind v4, Lucide)
 ├── backend/
@@ -88,7 +88,7 @@ Docker Compose starts everything automatically: PostgreSQL database, Redis broke
    ```bash
    # On Windows:
    $env:GROQ_API_KEY="gsk_..."
-   $env:DATABASE_URL="sqlite:///./sentinel.db"
+   $env:DATABASE_URL="sqlite:///./lawlatt.db"
    $env:REDIS_URL="redis://localhost:6379/0"
    ```
 4. Start FastAPI server:
